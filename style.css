@@ -1,0 +1,356 @@
+/* Сброс отступов и box-sizing */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+  /* Наследование шрифта */
+  body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+  }
+  h2{
+    font-size: 35px;
+  }
+  h1{
+    font-size: 54px;
+  }
+  p {
+    font-size:16px ;
+    font-weight: 400;
+    color: #4F5665;
+    line-height: 187%;
+  }
+  
+  /* Удаление стилей списка */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Удаление подчеркивания у ссылок */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Установка блочного поведения у изображений */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+/* конец базовых настроек - начало стилей для странички*/
+header{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding : 50px 150px 0px 150px;
+  box-sizing: border-box;
+  
+}
+.svg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contentMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navblock{
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    
+}
+.navblock a{
+    color: #4F5665;
+}
+.auth-buttons{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-up{
+    border: 1px solid #f53855;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f53855;
+    width: 150px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in{
+    font-weight: bold;
+}
+
+.centrContent{
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  justify-content: space-between;
+  gap:41px;
+  flex-wrap: wrap;
+
+
+}
+.texttitle{
+  width: 555px;
+}
+
+.p1head{
+  color: #4F5665;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.headspan{
+  font-weight: bold;
+}
+
+
+.but1 {
+  border-radius: 10px;
+  width: 250px;
+  height: 60px; 
+  background: #f53838;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 20px 30px rgba(245, 56, 85, 0.4);
+  border: none;
+  cursor: pointer;
+}
+
+/* Убираем фокусную рамку */
+.but1:focus {
+  outline: none;
+}
+
+.lowerblock{
+  display: flex;
+  margin-top:130px ;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 42px 114px 0px rgba(13, 16, 37, 0.06);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  
+  
+}
+.block1{
+  padding-left: 90px;
+  padding-top: 72px;
+  display: flex;
+  gap: 36px;
+  padding-bottom: 72px;
+}
+.block3{
+  padding-right: 90px;
+  padding-top: 72px;
+  display: flex;
+  
+  gap: 36px;
+  padding-bottom: 72px;
+}
+.block2{
+  padding-top: 72px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 72px;
+}
+.text-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.divider {
+  width: 2px;                    /* Толщина линии */
+  height: 129px;                 /* Высота линии как в SVG */
+  background-color: #EEEFF2;     /* Цвет как в твоем SVG */
+  border-radius: 1px;            /* Скругление краёв */
+  margin: 0 20px;                /* Отступ слева и справа, если нужно */         /* отступы сверху и снизу, при необходимости */
+}
+.p1head2{
+  color: #4F5665;
+}
+
+
+/*адаптация шапки сайта*/
+
+@media (max-width: 1024px) {
+  .block1 {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .block2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .block3 {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .lowerblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px; /* если нужен отступ между карточками */
+    box-shadow: 0px 40px 20px rgba(89, 4, 146, 0.595);
+    border-radius: 10px;
+  }
+  .divider{
+    width: 300px;
+    height: 2px;
+    background-color: #bc1d44;
+    border-radius: 1px;
+    margin: 20px auto;
+  }
+  .but1{
+    border-radius: 10px;
+    width: 150px;
+    height: 40px; 
+    background: #f53838;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 20px 30px rgba(245, 56, 85, 0.4);
+    border: none;
+    cursor: pointer;
+
+  }
+  h1{
+    font-size: 16px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .navblocks{
+    display: none;
+    
+  }
+}
+/* Конец адаптации шапки сайта*/
+  
+  
+
+
+.Provide{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  padding : 50px 150px 130px 150px;
+  box-sizing: border-box;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+
+.text-area{
+  max-width: 428px;
+  
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-box{
+  padding-top: 24px;
+  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan{
+  background-color: #f8f8f8;
+}
+
+.choose{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.text-ch{
+  width:555px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 60px;
+  
+
+}
+
+.card{
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 92px 50px 92px;
+  
+  
+}
+
+.info{
+  padding-top: 30px;
+}
+
+.butinfoс{
+  border: 2px solid #f53838;
+border-radius: 50px;
+cursor: pointer;
+}
+.butinfo{
+  display: flex;
+  
+  
+}
+.infof4{
+  font-weight: 500;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color: #0b132a;
+}
