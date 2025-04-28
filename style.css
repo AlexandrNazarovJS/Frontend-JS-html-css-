@@ -12,6 +12,7 @@
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    --font-family: "Rubik", sans-serif;
     
   }
   h2{
@@ -329,28 +330,56 @@ header{
   flex-direction: column;
   align-items: center;
   padding: 80px 92px 50px 92px;
-  
-  
+  height: 760px;
+    
 }
 
 .info{
   padding-top: 30px;
 }
 
-.butinfoс{
+.butinfoc {
   border: 2px solid #f53838;
-border-radius: 50px;
-cursor: pointer;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 177px;
+  height: 45px;
+  color: #f53838;
+  background-color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+
+
 }
-.butinfo{
-  display: flex;
-  
-  
-}
+
 .infof4{
+  
+  font-family: var(--font-family);
   font-weight: 500;
-font-size: 18px;
-line-height: 167%;
-text-align: center;
-color: #0b132a;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: #0b132a;
+
+}
+.txt{
+  text-align: center;
+  margin-top: auto;
+}
+.mo{
+  font-weight: 400;
+color: #4f5665;
+}
+
+.card:hover{
+  border: 2px solid #f53838;
+  border-radius: 10px;
+
+}
+
+.butinfoc:hover{
+  background: #f53838;
+  box-shadow:0px 24px 13px -16px rgba(245, 56, 56, 0.35);
+  
+  color: #fff;
 }
