@@ -383,3 +383,23 @@ color: #4f5665;
   
   color: #fff;
 }
+.Maph2{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 35px;
+line-height: 143%;
+text-align: center;
+color: #0b132a;
+max-width: 380px;
+}
+
+.Map{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.svgMap{
+  padding-top: 155px;
+}
