@@ -57,22 +57,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-async function loadCardsFromJSON(){
-    const response = await fetch('db.json');
-    const data = await response.json();
-
-    const cardCarouse = document.querySelector('.cardCarouse');
-    const dotsContainer = document.querySelector('.indetfic')
-
-    data.forEach((cardData,index)=>{
-        const card = document.createElement('div');
-        card.classList.add('infoCardPhoto');
-        card.textContent = cardData.text;
-
-
-        carousels.appendChild(card);
-        const dot = document.createElement('button');
-        dot.classList.add('identifier');
-        dotsContainer.appendChild(dot);
-    })
-}

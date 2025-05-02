@@ -408,6 +408,8 @@ max-width: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 180px;
+  
 }
 
 .arrow_next{
@@ -529,3 +531,133 @@ max-width: 380px;
   border-radius: 15px;
 }
 
+.contentfooter{
+  position: relative;
+
+}
+
+
+.Subscribe{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 42px 114px 0px rgba(13, 16, 37, 0.06);
+  
+  padding: 60px 70px;
+  border-radius: 10px;
+  width: 1200px;
+
+  
+  
+}
+
+.footerTextH2{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 35px;
+line-height: 129%;
+color: #0b132a;
+}
+
+.footerP{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #4f5665;
+}
+
+.textfooter{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 370px;
+}
+
+.link{
+  padding: 180px 150px 0 150px;
+  display: flex;
+  justify-content: space-between;
+  
+  
+
+  
+}
+
+
+.socialNetworks{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vpnFoot{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  text-align: center;
+  color: #afb5c0;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  row-gap:30px ;
+
+}
+
+.logoText{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.ptxtfoot{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+color: #afb5c0;
+}
+
+.TextLink{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.InfoSite{
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+
+a{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+color: #4f5665;
+cursor: pointer;
+}
+
+.LinkP{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  color: #0b132a; 
+  padding-bottom: 20px;
+}
+
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+}
