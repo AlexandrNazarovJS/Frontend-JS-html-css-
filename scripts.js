@@ -61,3 +61,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     scrollToCard(currentIndex); // начальная инициализация
 });
+
+
