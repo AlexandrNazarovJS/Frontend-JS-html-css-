@@ -1,6 +1,7 @@
-const displayTimer = document.getElementById('displayTime');
-const btnStart = document.getElementById('Start');
-const btnStop = document.getElementById('Stop');
-const btnReset = document.getElementById('Reset');
+const startButton = document.getElementById('Start');
+const stopButton = document.getElementById('Stop');
+const pauseButton = document.getElementById('Pause');
+const resetButton = document.getElementById('Reset');
+const display = document.getElementById('displayTime');
 
-
+let 
