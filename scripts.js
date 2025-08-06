@@ -60,6 +60,49 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     scrollToCard(currentIndex); // начальная инициализация
-});
 
+    const menuOverlay = document.getElementById('menuOverlay');
+    const burger = document.getElementById('burgerBtn');
+    const closeBtn = document.getElementById('closeBtn');
+
+    burger.addEventListener('click', () => {
+        menuOverlay.classList.add('show');
+    });
+    
+    closeBtn.addEventListener("click", () => {
+      burger.classList.remove("active");
+      menuOverlay.classList.remove("show");
+    });
+
+
+    const toggle = document.getElementById('themeToggle');
+    const nav = document.getElementById('navID');
+    
+    
+
+    if (localStorage.getItem('theme')==='dark'){
+        toggle.checked = true ;
+        document.body.classList.add('dark-theme');
+        nav.classList.add('dark-theme');
+        
+        
+    }
+    toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+        document.body.classList.add("dark-theme");
+        localStorage.setItem("theme", "dark");
+        nav.classList.add('dark-theme');
+        
+        
+
+    } else {
+        document.body.classList.remove("dark-theme");
+        localStorage.setItem("theme", "light");
+        nav.classList.remove('dark-theme');
+        
+    }
+    });
+
+
+});
 

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     
   }
 
@@ -45,6 +46,89 @@
     display: block;
   }
 /* конец базовых настроек - начало стилей для странички*/
+/*темная тема*/
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 10px;
+  z-index: 0;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  background-color: #18aeef;
+  border-radius: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.4s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  top: 4px;
+  background-color: rgb(95, 26, 192);
+  transition: transform 0.4s;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+input:checked + .slider {
+  background-color: #262627;
+}
+
+input:checked + .slider::before {
+  transform: translateX(28px);
+}
+
+.icon {
+  z-index: 2;
+  pointer-events: none;
+}
+
+body.dark-theme,
+body.dark-theme .plan{
+  background-color: #0b132a;
+  color: #ffffff ;
+}
+.dark-theme .navblock a,
+body.dark-theme p,
+body.dark-theme .p1head,
+body.dark-theme .p1head2,
+body.dark-theme .sign-in,
+body.dark-theme footer a {
+  color: #ffffff;
+}
+body.dark-theme .Subscribe{
+  background-color: #9b9fa8;
+}
+
+
+
+
+/*>>>>><<<<<*/
 header{
   max-width: 1500px;
   margin: 0 auto;
@@ -189,6 +273,13 @@ header{
   color: #4F5665;
 }
 
+.burger {
+  display: none;
+}
+
+.navBlockMobile {
+  display: none;
+}
 
 /*адаптация шапки сайта*/
 
@@ -256,9 +347,54 @@ header{
     font-size: 12px;
   }
   .navblocks{
-    display: none;
+    display: none; 
+  }
+  .containerBurger{
+    padding-top:40px ;
+    margin-bottom: 20px;
+  }
+  
+  .navBlockMobile.show{
+    display: block;
+    position: fixed;
+    background-color: #e2e2e2f6;
+    height: 100vh;
+    width: 360px;
+    padding-left: 30px;
+    overflow-y: auto
+    
     
   }
+  .burger{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  user-select: none;
+ 
+  }
+  .closeBtn{
+    position: absolute;
+    left: 90%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    
+  }
+  .burger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #333; /* цвет полос */
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+
 }
 /* Конец адаптации шапки сайта*/
   
@@ -660,4 +796,7 @@ cursor: pointer;
 .container{
   max-width: 1500px;
   margin: 0 auto;
+}
+footer{
+  margin-bottom: 100px;
 }
