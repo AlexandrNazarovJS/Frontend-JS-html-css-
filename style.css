@@ -940,3 +940,32 @@ cursor: pointer;
 footer{
   margin-bottom: 100px;
 }
+
+
+/*адаптация под мобилку*/
+
+
+@media(max-width:480px){
+  svg{
+    width: 100px;
+    height: 100px;
+  }
+  head{
+    flex-direction: column;
+  }
+  .cards{
+    flex-direction: column;
+  }
+  .imgHuge{
+    width: 100px;
+    height: 100px;
+  }
+  head{
+    display: flex;
+    justify-content: center;
+  }
+  .cardCarouse{
+    width: 200px;
+    height: 100px;
+  }
+}
