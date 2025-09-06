@@ -103,6 +103,68 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     });
 
+    const btnSignIn = document.getElementById('signIn');
+    const btnSignUp = document.getElementById('signUp');
+    const ModalIn = document.getElementById('loginWindow');
+    const ModalUp = document.getElementById('registrationWindow');
+    const closeReg = document.getElementById('closeReg');
+    const closeLog = document.getElementById('closeLog');
+    
+    
+    btnSignIn.addEventListener('click', () => {
+        ModalIn.classList.add('show');
+        
+    });
+
+    btnSignUp.addEventListener('click', () => {
+        ModalUp.classList.add('show');
+    });
+    closeReg.addEventListener('click',()=>{
+        ModalUp.classList.remove('show');
+    })
+    closeLog.addEventListener('click',()=>{
+        ModalIn.classList.remove('show');
+    })
+
+    btnSignIn.addEventListener('click',()=>{
+        ModalUp.classList.remove('show');
+        ModalIn.classList.add('show');
+    })
+    btnSignUp.addEventListener('click',()=>{
+        ModalIn.classList.remove('show');
+        ModalUp.classList.add('show');
+    })
+
+
+    const login = document.getElementById('login');
+    const password = document.getElementById('Password');
+    login.addEventListener('input',()=>{
+        if (login.value.length>0){
+            login.style.backgroundColor ='#fff';
+        }else{
+            login.style.backgroundColor ='';
+        }
+    })
+    password.addEventListener('input',()=>{
+        if (password.value.length>0){
+            password.style.backgroundColor ='#fff';
+        }else{
+            password.style.backgroundColor ='';
+        }
+    })
+
+
+    const areg = document.getElementById('aReg')
+    const aInpt = document.getElementById('aInpt');
+    areg.addEventListener('click',()=>{
+        ModalUp.classList.remove('show');
+        ModalIn.classList.add('show')
+    })
+    aInpt.addEventListener('click',()=>{
+        ModalIn.classList.remove('show');
+        ModalUp.classList.add('show');
+    })
+
 
 });
 

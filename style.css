@@ -125,9 +125,136 @@ body.dark-theme .Subscribe{
   background-color: #9b9fa8;
 }
 
+/*Окна регистрации и входа*/
+.registrationWindow {
+    position: fixed;
+  width: 400px;
+  height: 500px;
+  background: rgba(20, 20, 20, 0.874);
 
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  backdrop-filter: blur(10px);           /* Сам эффект "стекла" */
+  -webkit-backdrop-filter: blur(10px);   
+  
+  opacity: 0;
+  pointer-events: none;
+  
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  box-shadow: 0 0 40px #f6131ba9;
+  border-radius: 15px;
+  border: 2px solid #f53838
+}
+.loginWindow{
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  background: rgba(20, 20, 20, 0.874);
 
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  backdrop-filter: blur(10px);           /* Сам эффект "стекла" */
+  -webkit-backdrop-filter: blur(10px);   
+  
+  opacity: 0;
+  pointer-events: none;
+  
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  box-shadow: 0 0 40px #f6131ba9;
+  border-radius: 15px;
+  border: 2px solid #f53838
+}
+.logoInput h3{
+  color: #dedfe0;
+}
+.logoInput a {
+  color: #ff0000;
+}
+.loginWindow.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.containerInput{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 100px;
+  gap: 15px;
+}
+.logoInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+}
+.inputArea{
+  width: 300px;
+  height: 30px;
+  background-color: #ff0000;
+  padding-left: 10px;
 
+}
+.inputArea::placeholder{
+  color: #ffffffc6;
+  font-size:12px;
+  font-weight: bold;
+}
+.buttonIn{
+  width: 150px;
+  height: 40px;
+  background-color: #f53838;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.registrationWindow.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  
+}
+.closeLog{
+  position: absolute;
+  color:  rgba(20, 20, 20, 0.85);
+  border: none;
+  margin-left: 91%;
+  margin-top: 3%;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f53838;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.closeReg{
+   position: absolute;
+  color:  rgba(20, 20, 20, 0.85);
+  border: none;
+  margin-left: 91%;
+  margin-top: 3%;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f53838;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.regInput .containerInput{
+  padding-top: 20px;
+}
 /*>>>>><<<<<*/
 header{
   max-width: 1500px;
@@ -175,10 +302,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #0b132a00;
+    cursor: pointer;
 }
 
 .sign-in{
     font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .centrContent{
@@ -393,6 +526,13 @@ header{
     background-color: #333; /* цвет полос */
     border-radius: 2px;
     transition: 0.3s ease;
+  }
+  .registrationWindow{
+    height: 300px;
+
+  }
+  .loginWindow{
+    height: 300px;
   }
 
 }
