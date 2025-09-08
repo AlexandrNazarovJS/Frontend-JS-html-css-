@@ -964,17 +964,12 @@ footer{
     display: flex;
     justify-content: center;
   }
-  .cardCarouse{
-    width: 200px;
-    height: 100px;
-  }
   .lowerblock svg {
     width: 15px;
     height: 15px;
-    
   }
   .lowerblock p,
-  h3{
+  .lowerblok h3{
     font-size: 5px;
   }
   .divider{
@@ -988,5 +983,65 @@ footer{
     font-size: 5px;
     height: 20px;
     width: 30px;
+  }
+  .info svg {
+    width: 10px;
+    height: 10px;
+  }
+  .card {
+    width: 100px;
+    height: 800px;
+  }
+  .buttonComments{
+    width: 300px;
+  }
+  .chck-icon svg{
+    width: 15px;
+    height: 15px;
+  }
+  .cardCarouse{
+    width: 300px;
+    height: 300px;
+
+  }
+  .cardCarouse svg{
+    width: 10;
+    height: 10px;
+  }
+  .Comments{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .buttons svg{
+    width: 15px;;
+    height: 15px;
+  }
+  .buttonComments{
+    margin-top: 0;
+
+  }
+  .Subscribe{
+    width: 300px;
+    height: 100px;
+    font-size: 5px;
+  }
+  .footerTextH2,
+  .footerP{
+    font-size: 5px;
+  }
+  .Map{
+    padding-top: 30px;
+  }
+  .svgMap{
+    padding-top: 0px;
+  }
+  .Maph2{
+    color: #ddd;
+    font-size: 10px;
+  }
+  .link{
+    padding: 0px;
+    padding-top: 100px;
+    background-color: #09445d;
   }
 }
