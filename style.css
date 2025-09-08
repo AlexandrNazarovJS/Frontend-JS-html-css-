@@ -968,4 +968,25 @@ footer{
     width: 200px;
     height: 100px;
   }
+  .lowerblock svg {
+    width: 15px;
+    height: 15px;
+    
+  }
+  .lowerblock p,
+  h3{
+    font-size: 5px;
+  }
+  .divider{
+    width: 100px;
+  }
+  .svg svg{
+    width: 15px;
+    height: 15px;
+  }
+  .auth-buttons button {
+    font-size: 5px;
+    height: 20px;
+    width: 30px;
+  }
 }
