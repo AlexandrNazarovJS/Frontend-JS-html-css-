@@ -30,7 +30,7 @@ A web application that converts Arabic numerals into Roman numerals.
 - Handles invalid input and numerical boundaries.
 - Uses Roman numeral conversion logic.
 
-[View Project](./roman-numeral-converter)
+[View Project](./Roman-Numeral-Converter)
 
 ### 3. Telephone Number Validator
 
@@ -178,4 +178,3 @@ A web application that allows users to search for RPG creatures by name or ID us
 
 ---
 
-*Проєкти виконані в межах навчальної програми FreeCodeCamp.*
